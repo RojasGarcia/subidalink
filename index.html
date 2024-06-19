@@ -4,10 +4,10 @@
     <title>Autenticación</title>
 </head>
 <body>
-    <h2>Por favor, ingresa la contraseña</h2>
+    <h2>Por favor, ingresa una contraseña valida</h2>
     <form id="authForm">
         <input type="password" id="password" placeholder="Contraseña" required>
-        <button type="submit">Enviar</button>
+        <button type="submit">Aceptar</button>
     </form>
 
     <script>
@@ -15,10 +15,10 @@
             event.preventDefault();
             const password = document.getElementById('password').value;
             // Verifica la contraseña
-            if (password === 'tu_contraseña_secreta') {
-                window.location.href = 'https://docs.google.com/forms/tu_formulario';
+            if (password === '123456') {
+                window.location.href = 'https://forms.gle/XetQXR5CtRkjvCou8';
             } else {
-                alert('Contraseña incorrecta');
+                alert('Contraseña incorrecta, digite una corrrecta');
             }
         });
     </script>
